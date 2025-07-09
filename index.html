@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Israt Jahan Chadni | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fdf6f0, #f5d5b5);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: #5c3a1e;
+      font-size: 24px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #5c3a1e;
+      font-weight: 500;
+    }
+
+    .contact-btn {
+      background-color: #5c3a1e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 4rem 2rem;
+      gap: 2rem;
+    }
+
+    .hero img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .hero-text h1 span {
+      color: #a76f3d;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin: 1rem 0;
+      color: #444;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      color: #5c3a1e;
+    }
+
+    .download-btn {
+      margin-top: 1rem;
+      display: inline-block;
+      background-color: #5c3a1e;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #5c3a1e;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .project {
+      background-color: #fff6ea;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #a76f3d;
+      border-radius: 8px;
+    }
+
+    #contact p {
+      margin: 0.5rem 0;
+    }
+
+    #contact a {
+      color: #5c3a1e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #5c3a1e;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Israt</div>
+    <nav>
+      <a href="#About">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="contact-btn">Contact Me</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="photo/chadni.jpg" alt="Israt Jahan Chadni" />
+    <div class="hero-text">
+      <h1>Hey I'm <span>Israt Jahan Chadni</span><br>I'm a <span>Student</span></h1>
+      <p>I'm a passionate software engineering student at SUST with strong interest in frontend and mobile app development. I love building real-world projects using Flutter, Java, and C++.</p>
+      <div class="social-icons">
+        <a href="https://github.com/ichadni" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/israt.jahan.chadni.529269" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <a href="your-cv-link.pdf" class="download-btn" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="About">
+    <div class="container">
+      <h2>About Me</h2>
+      <h3>
+        I'm a passionate software engineering student at SUST with a strong interest in frontend and mobile app development. 
+        I enjoy building real-world projects using Flutter, Java, and C++. 
+        I'm constantly learning and love creative coding challenges.
+      </h3>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="Skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul type="square">
+        <li>Flutter & Dart</li>
+        <li>Java (Swing)</li>
+        <li>C, C++</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="Projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>📚 Books App</h3>
+        <p>
+          A mobile application built using Flutter and Firebase for exploring and managing a collection of books.
+          Users can browse categories, view book details, and manage their personal reading list.
+          Features include a user-friendly interface, cloud-based data storage, and real-time updates using Firebase.<br>
+          <strong>Tech:</strong> Flutter, Firebase
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>🧱 Brick Breaker Game</h3>
+        <p>
+          A classic arcade-style game built in Java using Swing. 
+          The player controls a paddle to break bricks through multiple levels. 
+          Features include scoring, increasing difficulty, and keyboard-based movement.<br>
+          <strong>Tech:</strong> Java, Swing
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>🐍 Snake Game</h3>
+        <p>
+          A terminal-based snake game built in C++ using OOP principles. 
+          The snake moves inside a bounded rectangular playground with <strong>walls as barriers</strong>. 
+          The game ends when the snake hits a wall or itself. 
+          Includes scoring, food collection, and increasing speed.<br>
+          <strong>Tech:</strong> C++
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>🧮 Calculator App</h3>
+        <p>
+          A feature-rich desktop calculator application developed in Java using Swing. 
+          In addition to basic arithmetic operations, it supports <strong>exponential, logarithmic, square root, and percentage functions</strong>.<br>
+          <strong>Tech:</strong> Java, Swing
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>📝 To-Do List App</h3>
+        <p>
+          A web-based To-Do List application that allows users to add, mark, and delete tasks.
+          Built with modern web technologies and styled for a clean user experience.<br>
+          <strong>Tech:</strong> HTML, CSS, JavaScript
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:ichadni113@gmail.com">ichadni113@gmail.com</a></p>
+      <p>🌐 GitHub: <a href="https://github.com/ichadni" target="_blank">github.com/ichadni</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/8801768065743" target="_blank">+880 1768-065743</a></p>
+      <p>📘 Facebook: <a href="https://www.facebook.com/israt.jahan.chadni.529269" target="_blank">Israt Jahan Chadni</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Israt Jahan Chadni. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

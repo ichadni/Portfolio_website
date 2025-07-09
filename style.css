@@ -1,0 +1,148 @@
+
+header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5c3a1e;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #5c3a1e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a76f3d;
+}
+
+.contact-btn {
+  background-color: #5c3a1e;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.hero img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero-text h1 span {
+  color: #a76f3d;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #444;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #5c3a1e;
+}
+
+.download-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #5c3a1e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* General Section Styles */
+section {
+  padding: 3rem 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #5c3a1e;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Project Section */
+.project {
+  background-color: #fff6ea;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #a76f3d;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+#contact p {
+  margin: 0.5rem 0;
+}
+
+#contact a {
+  color: #5c3a1e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #5c3a1e;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
