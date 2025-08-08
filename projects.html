@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Israt Jahan Chadni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.8rem;
+    }
+    /* Single Project Card */
+    .project-card {
+      background: #fff6ea;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 1.6rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+    }
+    /* Project Title */
+    .project-card h3 {
+      margin: 0 0 0.8rem 0;
+      font-size: 1.3rem;
+      color: #5c3a1e;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    /* Project Description */
+    .project-card p {
+      flex-grow: 1;
+      color: #3b2f2f;
+      line-height: 1.5;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    /* Tech Stack */
+    .tech-stack {
+      font-weight: 600;
+      color: #a76f3d;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Israt</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </header>
+
+  <main class="container">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3><i class="fas fa-book"></i> Books App</h3>
+        <p>A Flutter & Firebase mobile app to explore and manage book collections, including browsing, details, and real-time updates.</p>
+        <div class="tech-stack">Flutter, Firebase</div>
+      </article>
+
+      <article class="project-card">
+        <h3><i class="fas fa-brick-wall"></i> Brick Breaker Game</h3>
+        <p>An arcade game built with Java Swing, featuring paddle control, multiple levels, scoring, and increasing difficulty.</p>
+        <div class="tech-stack">Java, Swing</div>
+      </article>
+
+      <article class="project-card">
+        <h3><i class="fas fa-dragon"></i> Snake Game</h3>
+        <p>A terminal-based snake game in C++ using OOP principles with walls as barriers, scoring, and speed increase.</p>
+        <div class="tech-stack">C++</div>
+      </article>
+
+      <article class="project-card">
+        <h3><i class="fas fa-calculator"></i> Calculator App</h3>
+        <p>A desktop calculator with arithmetic, exponential, logarithmic, square root, and percentage functions built in Java Swing.</p>
+        <div class="tech-stack">Java, Swing</div>
+      </article>
+
+      <article class="project-card">
+        <h3><i class="fas fa-list-check"></i> To-Do List App</h3>
+        <p>A clean, responsive web app allowing users to add, mark, and delete tasks using HTML, CSS, and JavaScript.</p>
+        <div class="tech-stack">HTML, CSS, JavaScript</div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Israt Jahan Chadni. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="code1.js"></script>
+</body>
+</html>

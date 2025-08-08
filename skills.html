@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills | Israt Jahan Chadni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+   
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.5rem;
+    }
+    .skill-card {
+      background-color: #fff6ea;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .skill-icon {
+      font-size: 2.8rem;
+      color: #5c3a1e;
+      margin-bottom: 0.7rem;
+    }
+    .skill-name {
+      font-weight: 600;
+      color: #3b2f2f;
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Israt</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </header>
+
+  <main class="container">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-html5 skill-icon"></i>
+        <div class="skill-name">HTML5</div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt skill-icon"></i>
+        <div class="skill-name">CSS3</div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js skill-icon"></i>
+        <div class="skill-name">JavaScript</div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-java skill-icon"></i>
+        <div class="skill-name">Java</div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-code skill-icon"></i>
+        <div class="skill-name">C / C++</div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-flutter skill-icon"></i>
+        <div class="skill-name">Flutter</div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-github skill-icon"></i>
+        <div class="skill-name">Git & GitHub</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Israt Jahan Chadni. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

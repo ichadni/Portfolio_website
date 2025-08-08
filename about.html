@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Israt Jahan Chadni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Israt</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </header>
+  <div class="about-buttons">
+  <a href="hobbies.html" class="btn">Hobbies</a>
+  <a href="education.html" class="btn">Education</a>
+</div>
+
+  <section>
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-box">
+        <img src="photo/chadni.jpg" alt="Israt Jahan Chadni" class="about-image" />
+        <div class="about-content">
+          <p>Hello! I'm <strong>Israt Jahan Chadni</strong>, a passionate front-end developer and computer science student at SUST in Bangladesh.</p>
+          <p>I love building clean and responsive user interfaces using HTML, CSS, JavaScript, and Flutter. I’m constantly exploring new technologies and improving my skills through real-world projects.</p>
+          <p>Beyond coding, I enjoy reading books like Sherlock Holmes to improve my English, and I have a strong interest in technology, problem-solving, and creative design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Israt Jahan Chadni. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="code1.js"></script>
+</body>
+</html>
+
+<style>
+  .about-buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+.about-buttons .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #4b3621; /* Dark coffee */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.about-buttons .btn:hover {
+  background-color: #3a2915;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff6ea;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #3b2f2f;
+}
+.about-content p {
+  color: #3b2f2f;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+</style>

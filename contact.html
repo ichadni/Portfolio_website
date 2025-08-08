@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Israt Jahan Chadni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Israt</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <!-- ✅ Added: id and onsubmit -->
+      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
+        <label for="name">Name</label>
+
+        <!-- ✅ Added: name attribute -->
+        <input type="text" id="name" name="user_name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+
+        <!-- ✅ Added: name attribute -->
+        <input type="email" id="email" name="user_email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+
+        <!-- ✅ Added: name attribute -->
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Israt Jahan Chadni. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ✅ EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!-- ✅ EmailJS init and send logic -->
+  <script>
+    // Initialize EmailJS with your Public Key
+    (function() {
+      emailjs.init("zsx1MFrE9bvTSEmpJ"); // your public key
+    })();
+
+    // Handle contact form submission
+    function sendEmail(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_chadni', 'template_zecv3vb', event.target)
+        .then(() => {
+          alert('Message sent successfully!');
+          event.target.reset();
+        }, (error) => {
+          alert('Oops! Something went wrong.');
+          console.error(error);
+        });
+    }
+  </script>
+
+  <script src="code1.js"></script>
+</body>
+</html>
+
+<style>
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6ea;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.contact-form label {
+  font-weight: bold;
+  color: #3b2f2f;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background-color: #3b2f2f;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #5c4433;
+}
+</style>

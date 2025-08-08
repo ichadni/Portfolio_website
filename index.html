@@ -12,13 +12,19 @@
   <!-- Navigation -->
   <header>
     <div class="logo">Israt</div>
-    <nav>
-      <a href="#About">About</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+   <nav>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+
     <a href="#contact" class="contact-btn">Contact Me</a>
+    <div class="menu-icon" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
   </header>
 
   <!-- Hero Section -->
@@ -99,7 +105,7 @@
       </div>
 
       <div class="project">
-        <h3>🧮 Calculator App</h3>
+        <h3>🧾 Calculator App</h3>
         <p>
           A feature-rich desktop calculator application developed in Java using Swing. 
           In addition to basic arithmetic operations, it supports <strong>exponential, logarithmic, square root, and percentage functions</strong>.<br>
@@ -131,10 +137,12 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 Israt Jahan Chadni. All rights reserved.</p>
-    </div>
-  </footer>
+  <div class="container">
+    <p>© <span id="year"></span> Israt Jahan Chadni. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="code1.js"></script>
 
 </body>
 </html>
