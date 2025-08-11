@@ -67,16 +67,15 @@ if (contactForm && typeof emailjs !== "undefined") {
   });
 }
 
-// ====================
-// 🌟 GSAP Animations (excluding nav links)
-// ====================
+//  GSAP Animations (excluding nav links)
+
 if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 
-  // Animate logo
+  
   gsap.from("header .logo", { y: -50, opacity: 0, duration: 1, ease: "power3.out" });
 
-  // Animate contact button
+  
   gsap.from(".contact-btn", { scale: 0.5, opacity: 0, duration: 0.8, ease: "back.out(1.7)" });
 
   // Animate hero image and text
@@ -111,9 +110,8 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
   console.warn("GSAP or ScrollTrigger not found — animations disabled.");
 }
 
-// ====================
 // Auto-hide header on scroll down, show on scroll up
-// ====================
+
 (() => {
   let lastScrollY = window.scrollY;
   const header = document.querySelector('header');
@@ -122,10 +120,9 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
     if (!header) return;
 
     if (window.scrollY > lastScrollY) {
-      // Scrolling down - hide header
+      
       header.style.transform = 'translateY(-100%)';
     } else {
-      // Scrolling up - show header
       header.style.transform = 'translateY(0)';
     }
     lastScrollY = window.scrollY;
